@@ -1,0 +1,140 @@
+
+:root {
+  --card-width: 125px;
+  --card-height: 175px;
+}
+
+body {
+  margin: 0;
+  /* background: url(img/background.png); */
+  background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  color: #b5c99a;
+  font-family: 'Kaushan Script', cursive;  
+  text-shadow: 2px 2px #95aa6e;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+#ui-container {
+  text-align: center;
+}
+
+#ui-container h3 {
+  margin: 0;
+  display: inline-block;
+  font-size: 40px;
+  text-align: center;
+}
+
+#ui-container h3:first-child {
+  margin-right: 40px;
+}
+
+#card-container {
+  font-size:0;
+  margin: 50px auto;
+  width: calc((var(--card-width) + 24px) * 4);
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  width: var(--card-width);
+  height: var(--card-height);
+  border: 2px solid transparent;  
+  overflow: hidden;
+}
+
+/* Style the two logo images themselves. */
+.card-down,
+.card-up {
+  /* Take images out of the flow. */
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  /* When facing away from the screen each image should be hidden. */
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.card-down {
+  background-image: url(img/flowerCard2.PNG);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-up {
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.flipped .card-down {
+  transform: rotateY(180deg);
+}
+
+.flipped .card-up {
+  transform: rotateY(0deg);
+}
+
+.image-1 .card-up {
+  background-image: url(https://images.unsplash.com/photo-1553750294-2f8dfcc86439?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGNoZXJyeSUyMGJsb3Nzb21zfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60), linear-gradient(#72dbf4, #72dbf4);
+  background-size: cover;
+}
+
+.image-2 .card-up {
+  background-image: url(https://images.unsplash.com/photo-1575144785611-1d0121caa49b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-3 .card-up {
+  background-image: url(https://images.unsplash.com/photo-1600264195762-c10ff160b264?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRhaXNpZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-4 .card-up {
+  background-image: url(https://images.unsplash.com/photo-1617295740205-63d6a75eb86a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHlhY2ludGh8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-5 .card-up {
+  background-image: url(https://images.unsplash.com/photo-1461342249744-29a57e9bd1cb?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60), linear-gradient(#72dbf4, #72dbf4);
+}
+
+.image-6 .card-up {
+  background-image: url(https://images.unsplash.com/photo-1500508484808-e6eaa5fd820d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTcyfHxmbG93ZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60), linear-gradient(#72dbf4, #72dbf4);
+}
+
+div.button {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#play-again {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  margin-top: 40px;
+  height: 40px;
+  width: 160px;
+  background-color: whitesmoke;
+  color: #b5c99a;
+  text-shadow: 1px 1px #95aa6e;
+  border-radius: 10px;
+  font-weight: bold;
+  padding-bottom: 35px;
+}
+
+.glow {
+  box-shadow: 0 0 20px #1c7293;  transition-duration: 1s;
+}
+
